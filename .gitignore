@@ -1,0 +1,5 @@
+*.csv
+*.parquet*
+error_logs/*
+notebooks/.ipynb_checkpoints/*
+.ipynb_checkpoints/*
