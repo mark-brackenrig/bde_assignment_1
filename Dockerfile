@@ -74,7 +74,7 @@ RUN cp -p "$SPARK_HOME/conf/spark-defaults.conf.template" "$SPARK_HOME/conf/spar
     echo 'spark.driver.extraJavaOptions="-Dio.netty.tryReflectionSetAccessible=true"' >> $SPARK_HOME/conf/spark-defaults.conf && \
     echo 'spark.executor.extraJavaOptions="-Dio.netty.tryReflectionSetAccessible=true"' >> $SPARK_HOME/conf/spark-defaults.conf && \
     echo spark.debug.maxToStringFields=1000 >> $SPARK_HOME/conf/spark-defaults.conf &&\
-    echo spark.driver.memory=10g >> $SPARK_HOME/conf/spark-defaults.conf
+    echo spark.driver.memory=8g >> $SPARK_HOME/conf/spark-defaults.conf
 
 ADD https://repo1.maven.org/maven2/org/apache/spark/spark-avro_2.11/2.4.4/spark-avro_2.11-2.4.4.jar $SPARK_HOME/jars
 RUN chmod 644 $SPARK_HOME/jars/spark-avro_2.11-2.4.4.jar
